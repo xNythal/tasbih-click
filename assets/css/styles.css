@@ -82,3 +82,23 @@ input::-webkit-search-cancel-button:hover {
 input::-webkit-search-cancel-button:active {
     transform: scale(1);
 }
+
+#resetModal button {
+    transition: transform 0.15s ease, color 0.15s ease !important;
+}
+
+#resetModal button:hover {
+    transform: scale(1.05);
+}
+
+#resetModal button:active {
+    transform: scale(1);
+}
+
+#modal-container .modal-dialog {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0;
+}

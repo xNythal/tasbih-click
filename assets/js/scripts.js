@@ -11,6 +11,7 @@ fetch("https://xnythal.github.io/tasbih-click/reset-popup") // مسار المل
   .then(response => response.text())
   .then(data => {
     document.getElementById("reset-popup-container").innerHTML = data;
+    document.getElementById("confirm-reset").onclick = resetCounter
   });
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -18,8 +19,6 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 }
 
 document.getElementById("increment-btn").onclick = incrementCounter
-
-document.getElementById("confirm-reset").onclick = resetCounter
 
 function incrementCounter() {
   count++;
@@ -36,3 +35,8 @@ function resetCounter() {
   count = 0;
   document.getElementById("count").textContent = count;
 }
+
+window.addEventListener("beforeunload", (e) => {
+    e.preventDefault();
+    e.returnValue = '';
+});
