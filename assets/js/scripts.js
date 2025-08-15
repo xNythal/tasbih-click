@@ -17,6 +17,7 @@ function incrementCounter() {
   count++;
 
   countElem.innerText = count;
+
   localStorage.setItem("count", count)
 
   countElem.style.transform = "scale(1.1)"
@@ -29,6 +30,5 @@ function incrementCounter() {
 function resetCounter() {
   count = 0;
   document.getElementById("count").textContent = count;
-
   localStorage.setItem("count", count)
 }

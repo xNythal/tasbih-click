@@ -4,6 +4,13 @@
   }
 }
 
+:root {
+  --bs-pink: #ff69b4; /* اللون الأساسي */
+  --bs-pink-hover: #ff4da6; /* أغمق شوية للهوفر */
+  --bs-pink-active: #e0559a; /* أغمق أكتر عند الضغط */
+  --bs-pink-focus-shadow: rgba(255, 105, 180, 0.5);
+}
+
 html {
     color-scheme: dark;
 }
@@ -62,7 +69,7 @@ html {
 }
 
 .navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-control:focus {
@@ -105,4 +112,25 @@ input::-webkit-search-cancel-button:active {
 
 .no-user-select {
     user-select: none;
+}
+
+.btn-pink {
+  color: #fff;
+  background-color: var(--bs-pink);
+  border: 1px solid var(--bs-pink);
+  transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+
+.btn-pink:hover {
+  background-color: var(--bs-pink-hover);
+  border-color: var(--bs-pink-hover);
+}
+
+.btn-pink:focus, .btn-pink.focus {
+  box-shadow: 0 0 0 0.25rem var(--bs-pink-focus-shadow);
+}
+
+.btn-pink:active, .btn-pink.active {
+  background-color: var(--bs-pink-active);
+  border-color: var(--bs-pink-active);
 }
