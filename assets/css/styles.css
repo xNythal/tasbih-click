@@ -95,6 +95,14 @@ input::-webkit-search-cancel-button:active {
     transform: scale(1);
 }
 
-#modal-container .modal-dialog {
-    
+#reset-popup-container .modal-dialog {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0;
+}
+
+.no-user-select {
+    user-select: none;
 }
