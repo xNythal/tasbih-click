@@ -7,7 +7,7 @@ fetch("https://xnythal.github.io/tasbih-click/navbar") // مسار الملف
     document.getElementById("navbar-container").innerHTML = data;
   });
 
-if (!window.matchMedia('(prefers-color-scheme: dark)').matches) {
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   document.documentElement.setAttribute('data-bs-theme', 'dark');
 }
 
