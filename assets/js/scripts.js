@@ -1,20 +1,25 @@
 let count = 0;
-let countElem = document.getElementById("count")
+const countElem = document.getElementById("count")
 
 fetch("https://xnythal.github.io/tasbih-click/navbar") // مسار الملف
   .then(response => response.text())
   .then(data => {
     document.getElementById("navbar-container").innerHTML = data;
+});
+
+fetch("https://xnythal.github.io/tasbih-click/reset-popup") // مسار الملف
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("reset-popup-container").innerHTML = data;
   });
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   document.documentElement.setAttribute('data-bs-theme', 'dark');
 }
 
-
 document.getElementById("increment-btn").onclick = incrementCounter
 
-document.getElementById("reset-btn").onclick = resetCounter
+document.getElementById("confirm-reset").onclick = resetCounter
 
 function incrementCounter() {
   count++;
