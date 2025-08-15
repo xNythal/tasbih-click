@@ -1,15 +1,14 @@
 let count = 0;
 let countElem = document.getElementById("count")
 
-fetch("navbar.html") // مسار الملف
+fetch("https://xnythal.github.io/tasbih-click/navbar") // مسار الملف
   .then(response => response.text())
   .then(data => {
     document.getElementById("navbar-container").innerHTML = data;
   });
 
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+if (!window.matchMedia('(prefers-color-scheme: dark)').matches) {
   document.documentElement.setAttribute('data-bs-theme', 'dark');
-  document.getElementById("reset-btn").style.color = "white"
 }
 
 
