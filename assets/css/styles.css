@@ -43,7 +43,24 @@ html {
     transform: scale(1) !important;
 }
 
+.btn-outline-success {
+    display: inline-block;
+    transition: transform 0.15s ease, color 0.15s ease !important;
+}
+
+.btn-outline-success:hover {
+    transform: scale(1.05) !important;
+}
+
+.btn-outline-success:active {
+    transform: scale(1) !important;
+}
+
 #count {
     display: inline-block;
     transition: transform 0.15s ease, color 0.15s ease !important;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
