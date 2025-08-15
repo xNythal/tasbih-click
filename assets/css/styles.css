@@ -96,9 +96,5 @@ input::-webkit-search-cancel-button:active {
 }
 
 #modal-container .modal-dialog {
-    position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    margin: 0;
+    
 }
