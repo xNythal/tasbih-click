@@ -64,3 +64,21 @@ html {
 .navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
+.form-control:focus {
+  border-color: var(--bs-success);
+  box-shadow: inset 0 1px 1px var(--bs-success), 0 0 8px var(--bs-success);
+}
+
+input::-webkit-search-cancel-button {
+    cursor: pointer;
+    transition: transform 0.15s ease, color 0.15s ease !important;
+}
+
+input::-webkit-search-cancel-button:hover {
+    transform: scale(1.2);
+}
+
+input::-webkit-search-cancel-button:active {
+    transform: scale(1);
+}
