@@ -1,0 +1,9 @@
+# Node.js dependencies
+node_modules/
+
+# Optional: macOS/Windows system files
+.DS_Store
+Thumbs.db
+
+# VSCode settings file
+.vscode/

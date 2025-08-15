@@ -1,0 +1,49 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+html {
+    color-scheme: dark;
+}
+
+button {
+    border-radius: 5% !important;
+    width: 300px;
+    height: 300px;
+}
+
+#reset-btn {
+    font-size: 1.3rem !important;
+    cursor:pointer; font-size:1rem;
+    transition: transform 0.15s ease, color 0.15s ease !important;
+    color: black; /* لون هادئ */
+}
+
+#reset-btn:hover {
+    transform: scale(1.2) !important;
+    color: #198754 !important;
+}
+
+#reset-btn:active {
+    transform: scale(1) !important;
+}
+
+#increment-btn {
+    cursor:pointer; font-size:1rem;
+    transition: transform 0.15s ease, color 0.15s ease !important;
+}
+
+#increment-btn:hover {
+    transform: scale(1.01) !important;
+}
+
+#increment-btn:active {
+    transform: scale(1) !important;
+}
+
+#count {
+    display: inline-block;
+    transition: transform 0.15s ease, color 0.15s ease !important;
+}
